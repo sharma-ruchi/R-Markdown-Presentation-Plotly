@@ -1,0 +1,21 @@
+---
+title: "R Markdown Presentation & Plotly"
+author: "Ruchi Sharma"
+date: "March 15, 2017"
+output: ioslides_presentation
+---
+
+
+## Slide with R Output
+
+```{r, echo = FALSE}
+install.packages("plotly")
+
+library(plotly)
+
+library(ggplot2)
+
+plot_ly(x = precip, type = "histogram")
+```
+
+
